@@ -13,9 +13,7 @@ if(inputBox.value==""){
     
     addList.innerHTML = `
     <li>${inputBox.value}<button class="deleteButton">x</button></li>${addList.innerHTML}`;
-    //  let listItem=document.createElement('li')
-    //  listItem.innerHTML=inputBox.value;
-    //  taskList.appendChild(addList);
+   
      saveData();
 }
  inputBox.value="";
@@ -30,17 +28,6 @@ function deleteTodo() {
     });
  }
 
-// function deleteTodo()
-// {
-//     const deleteHTML = taskList.innerHTML(``) 
-//     let del=document.createElement('button')
-//     del.innerHTML='X'
-//     listItem.appendChild(del);
-//     del.onclick=function ()
-//     {
-//        listItem.remove() 
-//     }
-// }
 function saveData()
 {
     localStorage.setItem("Data",taskList.innerHTML);
